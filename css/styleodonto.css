@@ -1,0 +1,262 @@
+ /* Codigo para cuadara todos los elementos al usar el border-box */
+ * {
+   box-sizing: border-box;
+}
+
+/* css del container principal */
+.container--fluid {
+   background-color: white;
+}
+
+/* Cuadrar el logo del formulario o nombre */
+.logo {
+   text-align: center;
+   font-size: 3em;
+}
+
+
+/* Codigo del container del nav bar */
+.container-fluid {
+   /* rgb(37, 35, 35) */
+   background-color: black;
+   margin-top: auto;
+   /* font-size: 30px; */
+}
+/* manejo del espacio afuera del navabar */
+.navbar {
+   background-color: black;
+   padding: 0px 0px;
+}
+
+.nav-item .info{
+   justify-content: center;
+   align-items: center;
+}
+.inicio{
+   background-color:black;
+   color: white;
+}
+.nombre{
+   text-align: center;
+   color: white;
+}
+/* manejar los elementos del formulario */
+form{
+   display: flex;
+   flex-wrap:wrap ;  
+   justify-content: space-between;
+ 
+   width: 100%;
+   padding: 0 1rem;
+   max-width: 1500px;
+ 
+   margin-left: auto;
+   margin-right: auto;
+ }
+ .form{
+     display: flex;
+     flex-direction: column;
+     width: 14rem;
+     margin: 0.5rem 0;
+ }
+ .form label{
+     font-size: 0.9rem;
+     margin-bottom: 0.2rem;
+ 
+ 
+ }
+ .form input{
+     font-size: 1.1rem;
+     
+     height: 2.2rem;
+     padding-left: 0.5rem;
+ 
+     border: 2px solid #696969;
+     border-radius: 5px;
+ }
+
+/* el espacio del carrusel y odontrograma */
+/* imagen */
+.imagen{
+   width: 100%;
+   height: 100%;
+}
+/* manejo del titulo del carrusel */
+.tagg{
+   text-align: center;
+}
+.odon{
+   text-align: center;
+}
+.carousel-inner{
+margin-left: 30px;
+}
+/* manejo de la observación */
+.observaciones{
+   /* display: flex;
+   flex-wrap:wrap ;  
+   justify-content: space-between; */
+ 
+    width: 100%;
+   padding: 0 1rem;
+   max-width: 1000px;
+  
+   margin-left: auto;
+   margin-right: auto;
+}
+/* manejo de los botones parte de abajo */
+.botonn{
+   display: flex;
+ flex-wrap:wrap ;  
+ justify-content: space-between;
+
+ width: 100%;
+ padding: 0 1rem;
+ max-width: 1000px;
+
+ margin-left: auto;
+ margin-right: auto;
+}
+.info{
+   padding: 0.75rem 1.2rem;
+   font-size: 1rem;
+   background-color: lightgray;
+   border: 2px solid #696969;
+   border-radius: 5px;
+   margin-left: auto ;
+   margin-right: auto;
+   
+   
+}
+.col form-check{
+   display: flex;
+   flex-direction: column;
+   width: 14rem;
+   margin: 0.5rem 0;
+}
+.par1{
+  display: flex;
+  float: right; 
+  padding-left:30px;
+}
+.par2{
+   display: flex;
+  float: right; 
+  padding-left:30px;
+}
+.par3{
+   display: flex;
+  float: right; 
+  padding-left:30px;
+}
+.par4{
+   display: flex;
+  float: right; 
+  padding-left:30px;
+}
+.par5{
+   display: flex;
+  float: right; 
+  padding-left:30px;
+}
+.par6{
+   display: flex;
+  float: right; 
+  padding-left:30px;
+}
+
+.boton{
+   width: 100%;
+   max-width: 1700px;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-gap: 50px;
+   padding: 45px 0px;
+   
+} 
+.btn{
+   padding: 0.75rem 1.2rem;
+   font-size: 1rem;
+   background-color: lightgray;
+   border: 2px solid #696969;
+   border-radius: 5px;
+
+}
+
+
+@media screen and (max-width:800px) {
+   .boton{
+       width: 100%;
+       grid-template-columns: repeat(1,1fr);
+       grid-gap: 30px;
+       padding: 35px 0px;
+   }
+   
+}
+
+
+
+/* piede página */
+.pie-pagina{
+   width: 100%;
+   background-color: gray;
+}
+.pie-pagina .grupo-1{
+   width: 100%;
+   max-width: 1700px;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-gap: 50px;
+   padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+   width: 100%;
+  height: 100%;
+   display: felx;
+  justify-content: center;
+   align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+   width: 50%;
+}
+.pie-pagina .grupo-1 .box h2{
+   color: #fff;
+   margin-bottom: 25px;
+  
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: gray;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+   color: aqua;
+}
+.pie-pagina .grupo-2{
+   background-color: gray;
+   padding: 15px 10px;
+   text-align: center;
+   color: #fff;
+}
+.pie-pagina .grupo-2 small{
+   font-size: 15px;
+}
+@media screen and (max-width:800px) {
+   .pie-pagina .grupo-1{
+       width: 100%;
+       grid-template-columns: repeat(1,1fr);
+       grid-gap: 30px;
+       padding: 35px 0px;
+   }
+   
+}
