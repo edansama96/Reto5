@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página de registro</title>
+	 <!-- Conexión con el bootstrap de forma local -->
+	 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	 <!-- Link para manejar el archivo css -->
+	 <link rel="stylesheet" href="css/style_registro.css">
+	<!-- <link rel="stylesheet" href="reset.css"> -->
+	<link rel="stylesheet" href="style_registro.css">
+</head>
+<body>
+	<header>
+		<div class="caja">
+			<div>
+			<h1 class="titulo" >Registro</h1>
+			</div>
+			<h1><img src="img/nombre1.png" class="logo" width="100%"></h1>
+		
+		</div>
+	</header>
+	<main>
+		<div class="tipo_usuarios">
+			<h2>Tipo de Usuario:</h2>
+            <label for="radio-odontologo"><input type="radio" value="odontologo" name="usuario" id="radio-odontologo">Odontólogo</label>
+            
+            <label for="radio-administrador"><input type="radio" value="administrador" name="usuario" id="radio-administrador">Administrador</label>
+            
+            <label for="radio-laboratorista"><input type="radio" value="laboratorista" name="usuario" id="radio-laboratorista">Laboratorista</label>
+        </div>
+		<br>
+		<div class="info_usuarios">
+			<form action="">
+			<p>	
+			<label for="nombres">Nombres:</label>
+			<input id="nombres" class="padron" placeholder="Ingrese nombres" type="text">
+			</p>
+			<p>
+			<label for="apellidos">Apellidos:</label>
+			<input id="apellidos" class="padron" placeholder="Ingrese apellidos">
+			</p>
+			<p>
+			<label for="correo">Email:</label>
+			<input id="correo" class="padron" placeholder="Ingrese correo">
+			</p>
+			<p>
+			<label for="cedula">Documento identidad:</label>
+			<input id="cedula" class="padron" placeholder="Ingrese número documento">
+			</p>
+			<p>
+			<label for="entidad">Entidad:</label>
+			<input id="entidad" class="padron" placeholder="Ingrese entidad">
+			</p>
+			<p>
+			<label for="telefono">Teléfono de contacto:</label>
+			<input id="telefono" class="padron" placeholder="Ingrese número teléfono">
+			</p>
+			<p>
+			<label for="whatsapp">Número de Whatsapp:</label>
+			<input id="whatsapp" class="padron" placeholder="Ingrese número Whatsapp">
+			</p>
+			<p>
+			<label for="ciudad">Ciudad de residencia:</label>
+			<input id="ciudad" class="padron" placeholder="Ingrese ciudad">
+			</p>
+			<p>
+			<label for="direccion">Dirección de residencia:</label>
+			<input id="direccion" class="padron" placeholder="Ingrese dirección">
+			</p>
+			<p>
+			<label for="contraseña">Contraseña:</label>
+			<input id="contraseña" class="padron" type="password" placeholder="Ingrese contraseña">
+			</p>
+			<p>
+			<label for="validar">Valide contraseña:</label>
+			<input id="validar" class="padron" type="password" placeholder="Valide contraseña">
+			</p>
+			</form> 
+			<br>
+			<br>
+			<div class="btn_registrar">
+				<a th:href="@{/login}" class="btn btn-primary btn-block"id="btna">Registrar</a>
+			</div>
+			<!-- inicio prueba registro -->
+			
+			<!-- Fin prueba de registro -->
+			<script>
+				var registrar = document.querySelector(".registrar");
+				registrar.onclick = () => { 
+					alert("Se han registrado los datos del usuario");	
+				}
+			</script>
+			<br>
+		</div>
+	</main>
+	<footer>
+		<h6>Elaborado por equipo 2, grupo 70. Universidad tecnológica de Pereira Mintic 2022.</h6>
+	</footer>
+<!-- Los poppers  por separado-->
+ <script src="bootstrap/poppers/popper.min.js"></script> 
+<script src="bootstrap/poppers/bootstrap.min.js"></script>
+<!-- Los de bootstrap con JS -->
+ <!-- <script src="bootstrap/js/bootstrap.min.js"></script>  -->
+</body>
+</html>

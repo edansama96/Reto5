@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width= , initial-scale=1.0">
+  <title>Login</title>
+  <!-- Conexión con el bootstrap de forma local -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Link para manejar el archivo css -->
+  <link rel="stylesheet" href="css/stylelo.css">
+<!-- fontawesome -->
+     <script src="https://kit.fontawesome.com/202ab3dd72.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+  
+  <section class="h-100 gradient-form" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+                <!-- <img src="img/odontorem.png" -->
+                <div class="text-center">
+                   <img src="img/odonto.jpeg" 
+                    style="width: 185px;" alt="logo">
+                  <h4 class="mt-1 mb-5 pb-1">Odonto service a tu servicio </h4>
+                </div>
+                <form>
+                  <p>Por favor ingresa tus credenciales :</p>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example11">Correo :</label>
+                    <input type="email" id="form2Example11" class="form-control"
+                      placeholder="Ingrese su correo" required autocomplete />
+                    
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example22">Contraseña :</label>
+                    <input type="password" id="form2Example22" class="form-control" placeholder="Ingrese su contraseña" required />
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                      <a th:href="@{/administrador}" class="btn btn-primary btn-block  gradient-custom-2 mb-3"id="btna">Ingresar</a>
+                     <!--  <input  class="btn btn-primary btn-block  gradient-custom-2 mb-3" type="submit" value="Ingresar" id="btnn">-->
+                    <a class="text-muted" href="#!">Olvidaste tu contraseña?</a>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <a th:href="@{/registroadmin}" class="btn  btn-outline-danger"id="btnb">Crear una cuenta</a>
+
+                    <p class="mb-0 me-2">No tienes una cuenta?</p>
+                    
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+            <!-- color #839B8B   -->
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2"style="background-color: black "  >
+              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                <h4 class="mb-4">Somos la solución logistica por excelencia</h4>
+                <p class="small mb-0">Encargados de diseñar con excelcncia y calidad
+                    cada uno de nuestros productos 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+    <!-- piede página inicio -->
+    <div class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#"><img src="img/nombre1.png" alt="logo"></a>
+          </figure>
+        </div>
+        <!-- <div class="box">
+          <h2>Sobre Nosotros</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, veritatis?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, veritatis?</p>
+    
+        </div> -->
+        <div class="box">
+          <h2>Siguenos</h2>
+          <div class="red-social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#"class="fa fa-instagram"></a>
+            <a href="#"class="fa fa-google-plus-square"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy;2022 <b>Equipo 2 Grupo 70</b> -Todos los Drechos reservados.</small>
+      </div>
+    </div>
+    <!-- fin -->
+         </footer>
+   <!-- Los poppers  por separado-->
+   <script src="bootstrap/poppers/popper.min.js"></script> 
+   <script src="bootstrap/poppers/bootstrap.min.js"></script>     
+  
+  <!-- Los de bootstrap con JS -->
+  <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+</body>
+</html>
+

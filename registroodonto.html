@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro-odontoser</title>
+    <!-- Conexión con el bootstrap de forma local -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <!-- Link para manejar el archivo css -->
+    <link rel="stylesheet" href="css/styleregis0.css" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/202ab3dd72.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container--fluid">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark" >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: white;font-size:40px;"><img src="img/nombre.png" alt="" width="70%"></a>
+            </div>
+          </div>
+
+        </nav> 
+      </header>
+         <section>
+          <main>
+            <h1 class="nombre">Registro</h1>
+            
+            <form  method="post" th:action="@{/guardar}" th:object="${usuarios}">
+              <!-- <div class="tipo_usuarios">
+                <h2>Tipo de Usuario:</h2>
+                      <label for="radio-odontologo"><input type="radio" value="odontologo" name="usuario" id="radio-odontologo" required >Odontólogo</label>
+                      <label for="radio-administrador"><input type="radio" value="administrador" name="usuario" id="radio-administrador" required >Administrador</label>
+                      <label for="radio-laboratorista"><input type="radio" value="laboratorista" name="usuario" id="radio-laboratorista" required >Laboratorista</label>
+                  </div> -->
+              <div class="form">
+                <label for="tipousuario">Tipo de Usuario:</label>
+                <select id="tipousuario" name="tipousuario" class="select form-select-lg"  required >
+                  <option >Administrador</option>
+                  <option >Odontologo</option>
+                  <option>Laboratorista</option>
+
+                </select>
+              </div>
+              <div class="form">
+                <label for="nombre">Nombres:</label>
+                <input id="nombre" type="text" name="nombre" class="padron" placeholder="Ingrese su nombre"  required autocomplete>
+              </div>
+              <div class="form">
+                <label for="apellido">Apellidos:</label>
+                <input id="apellido" type="text" name="apellido" class="padron" placeholder="Ingrese su apellido"  required autocomplete>
+              </div>
+              <div class="form">
+                <label for="idusuario">Documento de identidad:</label>
+                <input id="idusuario" type="number" name="idusuario" class="padron" placeholder="Ingrese su Documento"  required >
+              </div>
+              <div class="form">
+                <label for="entiedad">Entidad:</label>
+                <input id="entidad" type="text" name="entidad" class="padron" placeholder="Ingrese su entidad"  required autocomplete>
+              </div>
+              <div class="form">
+                <label for="telefono">Teléfono de contacto:</label>
+                <input id="telefono" type="number" name="telefono" class="padron" placeholder="Ingrese su número"  required autocomplete>
+              </div>
+              <div class="form">
+                <label for="whatsapp">Número de Whatsapp:</label>
+                <input id="whatsapp" type="number" name="whatsapp" class="padron" placeholder="Ingrese su whastapp"  required autocomplete>
+              </div>
+              <div class="form">
+                <label for="direccion">Dirección de residencia</label>
+                <input id="direccion" type="text" name="direccion" class="padron" placeholder="Ingrese su dirección"  required autocomplete>
+              </div>
+              <div class="form">
+                <label for="ciudad">Ciudad de residencia:</label>
+                <input id="ciudad" type="text" name="ciudad" class="padron" placeholder="Ingrese su ciudad" required autocomplete>
+              </div>
+              <div class="form">
+                <label for="correo">Correo:</label>
+                <input id="correo" type="email" name="correo" class="padron" placeholder="Ingrese su correo"   autocomplete>
+              </div>
+              <div class="form">
+                <label for="contrasena">Contraseña:</label>
+                <input id="contrasena" type="password" name="contrasena" class="padron" placeholder="Ingrese su contraseña"   required>
+              </div>
+              <div class="form">
+                <label for="validarcontrasena">Validar contraseña:</label>
+                <input id="validarcontrasena" type="password" name="validarcontrasena" class="padron" placeholder="Ingrese su dirección"  required>
+              </div>
+              <div class="privacidad">
+                <input type="checkbox" required>
+                <label for="">He leído y acepto la política de privacidad</label>
+              </div>
+              <div class="registrar">
+                <button>Registrar</button>
+              </div>  
+            </form>
+
+          </main>
+    
+    </section>
+    
+    <footer>
+      <!-- piede página inicio -->
+      <div class="pie-pagina">
+        <div class="grupo-1">
+          <div class="box">
+            <figure>
+              <a href="#"><img src="img/nombre1.png" alt="logo" /></a>
+            </figure>
+          </div>
+          <div class="box">
+            <h2>Siguenos</h2>
+            <div class="red-social">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-google-plus-square"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-youtube"></a>
+              
+            </div>
+          </div>
+        </div>
+        <div class="grupo-2">
+          <small >&copy;2022 <b>Equipo 2 Grupo 70</b> -Todos los Drechos
+            reservados.</small>
+        </div>
+      </div>
+      <!-- fin -->
+    </footer>
+    </div>
+        <!-- Los poppers  por separado-->
+  <script src="bootstrap/poppers/popper.min.js"></script> 
+  <script src="bootstrap/poppers/bootstrap.min.js"></script>     
+ 
+ <!-- Los de bootstrap con JS -->
+ <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+ 
+  </body>
+</html>

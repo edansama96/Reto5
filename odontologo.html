@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odonto Servis</title>
+     <!-- Local para css conexión boostrap -->
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+     <!-- Link para manejar el archivo css -->
+     <link rel="stylesheet" href="css/style0.css">
+     <!-- FONT AWESOMW -->
+     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+     <!-- <script src="https://kit.fontawesome.com/202ab3dd72.js" crossorigin="anonymous"></script> -->
+    </head>
+<body class="ed">
+    <div class="container--fluid">
+        
+            <!-- inicio del bnavbar o barra de navegación -->
+        <header>
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#" style="color: white;">OdontoServis</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a th:href="@{/}" class="nav-link active" aria-current="page" href="#" style="color: white;">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Galeria</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link " href="#" style="color: white;">Sobre Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Ordenes de trabajo</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </nav>
+              <!-- Fin de la barra de navegación -->
+        </header>
+        <hr>
+        <main class="cuerpo">
+          <!-- Container para tener el formulario -->
+            <!-- Inicio del espacio formulario -->
+            <section class="form-registro">
+              <!-- div para contener el formulario -->
+            <div class="contact-form">
+              <h3 class="logo">Orden de servicio</h3>
+              <form action="">
+                <p>
+                  <label for="formGroupExampleInputs" class="form-label">Orden de servicio :</label>
+                <label for="formGroupExampleInputc" class="form-label">####</label>
+                </p>
+                <p><label for="formGroupExampleInputt" class="form-label">Cédula :</label>
+                  <label for="formGroupExampleInputd" class="form-label">######</label></p>
+                <p>
+                  <p>
+                    <label for="formGroupExampleInput2" class="form-label">Nombre :</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nombre del paciente">
+                  </p>
+                  <p>
+                  <label for="formGroupExampleInputaa" class="form-label">Apellido:</label>
+                  <!-- <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Apellido del paciente"> -->
+                  <input type="text" class="form-control" id="formGroupExampleInputaa" placeholder="Apellido del paciente">
+                </p>
+                <p>
+                  <label for="formGroupExampleInput4" class="form-label">Color :</label>
+                <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Ingrese un color">
+                </p>
+                <p>
+                  <label for="formGroupExampleInput5" class="form-label">Clase de metal :</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Ingrese el tipo de metal">
+              </p>
+              <p>
+                <label for="formGroupExampleInput6" class="form-label">Fecha de creación :</label>
+                <input type="date" class="form-control" id="formGroupExampleInput6" placeholder="Fecha de creación">
+              </p>
+              </form>
+                
+              </div>
+            </section>
+            <hr>
+            <!-- Fin del formulario -->
+        </div> 
+        <!-- Grid para el carrusel y odontograma -->
+        <div class="row">
+          <div class="col-sm-6" >
+          <!-- car -->
+          <!-- Inicio carrusel -->
+        <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel"> 
+      <!--  -->
+      <h2 class="tag">Imagenes del caso :</h2>
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+      
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/la.jpg" alt="Los Angeles" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/chicago.jpg" alt="Chicago" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="img/ny.jpg" alt="New York" class="d-block w-100">
+      </div>
+      </div>
+      
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      </button>
+      
+      </div>
+          <!-- car -->
+          <!-- Boton del carusel -->
+          <p class="ingresar"><button type="button" class="btn btn-primary" style="font-size:30px ;">Ingresar</button></p>
+          </div>
+          <div class="col-sm-6" >
+            <h2 class="odon">Odontograma :</h2>
+              <div class="row">
+                <p class="cambio">
+                  <div class="col-sm-10" >
+                    <img src="img/odonto.jpg" width="100%" alt="">
+                  </div>
+                  <div class="col-sm-2" >
+                     <h3 class="li">Casos :</h3>
+                      <ul class="list-group">
+                        <li class="list-group-item"><input class="form-check-input" type="box" value="" style="background-color:white ;" checked/> sano</li>
+                        <li class="list-group-item"><input class="form-check-input" type="box" value="" style="background-color:green ;" checked/> copin</li>
+                        <li class="list-group-item"><input class="form-check-input" type="box" value="" style="background-color:purple ;" checked/> Corona anatómica</li>
+                        <li class="list-group-item"><input class="form-check-input" type="box" value="" style="background-color:red ;" checked/> Póntico reducido</li>
+                        <li class="list-group-item"><input class="form-check-input" type="box" value="" style="background-color:green ;" checked/> Third item</li>
+                        <li class="list-group-item"><input class="form-check-input" type="box" value="" style="background-color:green ;" checked/> Third item</li>
+                      </ul>
+                       <!-- check -->
+                   
+                    </div>
+                  </p>
+              </div>
+              </div>
+      </div>
+        <br>
+      <!-- Prueba --> 
+      <!-- fin prueba -->
+      <!-- Espacio para la descripcion -->
+      <hr>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" ></textarea>
+      </div>
+      <hr>
+      <br><br>
+      <!-- fin del espacio de la descripcion -->
+       <!-- barra de botones -->
+       <section class="botones">
+       <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+          
+        <button type="button" class="btn btn-primary" style="font-size:30px ;">Guardar</button>
+        <button type="button" class="btn btn-primary"style="font-size:30px ;">Modificar</button>
+        <button type="button" class="btn btn-primary"style="font-size:30px ;">Duplicar</button>
+        <button type="button" class="btn btn-primary"style="font-size:30px ;">Borrar</button>
+      
+      </div>
+  </section>
+    <!-- Fin de la barra de botones -->
+<!-- fin -->
+
+        </main>
+        <footer class="pie">
+            <p>Derechos reservados</p> 
+            <!-- <p><img src="img/instagram.png" alt=""></p>
+            <p><img src="img/facebook.png" alt=""> </p>
+            <p><img src="img/twitter.png" alt=""></p> -->
+        </footer>
+    </div>
+    <!-- Los poppers -->
+    
+<script src="bootstrap/poppers/bootstrap.min.js"></script>
+<script src="bootstrap/poppers/popper.min.js"></script>
+
+<!-- Los de bootstrap con JS -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
